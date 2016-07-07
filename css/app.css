@@ -1,0 +1,19 @@
+.search-block{
+    margin-top: 24px;
+}
+.lbl-search {
+    display: block;
+    font-size: 24px;
+    color: lightseagreen;
+}
+.input-search {
+    display: block;
+    top-margin: 6px;
+}
+.cartoon-name {
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 36px;
+    color: lightseagreen;
+}

@@ -1,0 +1,29 @@
+{
+	"status": "Success",
+    "searchResultList": [
+	{
+		"name": "Dexter",
+		"avatar": "dexter_avatar.png"
+	},
+	{
+		"name": "Donald",
+		"avatar": "donald_avatar.png"
+	},
+	{
+		"name": "Jerry",
+		"avatar": "jerry_avatar.png"
+	},
+	{
+		"name": "Mario",
+		"avatar": "mario_avatar.png"
+	},
+	{
+		"name": "Mickey",
+		"avatar": "mickey_avatar.png"
+	},
+	{
+		"name": "Popeye",
+		"avatar": "popeye_avatar.png"
+	}
+    ]
+}

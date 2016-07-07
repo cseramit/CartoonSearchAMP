@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en" data-ng-app="cartoonSearchApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cartoon character search</title>
+    <meta name="description" content="Cartoon Character">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Use CDN sources for now -->
+    <link rel="shortcut icon" href="./img/cartoon.ico"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+
+    <!--Application Javascript Files-->
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/services/RestApiService.js"></script>
+    <script src="./scripts/controllers/HomeController.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/app.css" media="screen" />
+
+</head>
+
+<body>
+    <div class="container" data-ng-controller="HomeController">
+        <div class="form-group search-block">
+            <label class="lbl-search" for="searchBox"> People search </label>
+            <input id="searchBox" type="text" placeholder="Enter the name of cartoon character"
+                   class="input-search form-control" data-ng-model="searchString">
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-4" data-ng-repeat="cartoon in searchResultList | filter: {name: searchString}">
+                <img class="img-responsive center-block" ng-src="./img/{{cartoon.avatar}}" >
+                <p class="text-center cartoon-name">{{cartoon.name}}</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
